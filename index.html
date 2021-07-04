@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Grayscale - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <script type="text/javascript" src="js/Chart.js"></script>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">SELAMAT DATANG</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#beranda">BERANDA</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#latarbelakang">LATAR BELAKANG</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#peta">PETA</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#data">DATA</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#grafik">GRAFIK</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#kontak ">KONTAK</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <h1 class="mx-auto my-0 text-uppercase">SISTEM INFORMASI GEOGRAFIS
+                            </h1>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Jumlah Tenaga Bidan, dan Jumlah Tempat Bersalin di Jawa Tengah Tahun 2019</h2>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- beranda-->
+        <section class="bg-black text-center" id="beranda">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-white mb-4">BIDAN</h2>
+                        <p class="text-white-50">
+                            Bidan adalah tenaga professional yang bertanggung-jawab dan akuntabel, yang bekerja sebagai mitra perempuan untuk memberikan dukungan, asuhan dan nasehat selama masa hamil, masa persalinan dan masa nifas, memfasilitasi dan memimpin persalinan atas tanggung jawab sendiri dan memberikan asuhan kepada bayi baru lahir, dan bayi.
+                        </p>
+                    </div>
+                </div>
+                <img class="img-fluid" src="assets/img/bidan.png" alt="Img" height="270" width="270" />
+            </div>
+    </section>
+<!-- Latar belakang -->
+        <section class="about-section text-center" id="latarbelakang">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-white mb-4">Latar Belakang</h2>
+                        <p class="text-white-50" style="text-align:justify">
+                            Perkembangan ilmu pengetahuan dan teknologi yang sangat pesat terutama dalam bidang kesehatan menjadikan masyarakat membutuhkan tenaga medis atau tenaga kesehatan dalam kehidupan sehari-hari. Tingginya angka kelahiran bayi sangat membutuhkan tenaga medis terutama bidan. Kurangnya informasi dan akses internet untuk mengetahui lokasi praktik bidan selain pukesmas, menyulitkan masyarakat saat dalam keadaan darurat seperti kasus akan melahirkan. Pemilihan judul Perbandingan Jumlah Kelahiran Bayi dengan Jumlah Tenaga Bidan dan Tempat Bersalin di Provinsi Jawa Tengah Tahun 2019 bertujuan untuk membandingkan dan menganalisis pemerataan Tugas Bidan dan tempat bersalin yang ada di Provinsi Jawa Tengah pada tahun 2019. Dengan adanya Sistem Informasi Geografis ini bertujuan untuk memudahkan  melihat Jumlah Kelahiran terhadap jumlah Bidan dan jumlah Tempat Bersalin di Jawa Tengah. Analisis ini dilakukan dengan cara membandingkan jumlah kelahiran bayi dengan jumlah tenaga medis dan jumlah tempat bersalin di Jawa Tengah. Data yang di peroleh dari Badan Pusat Statistik Jawa Tengah dan di olah menggunakan software QGIS 2.18.18.
+                        </p>
+                    </div>
+                </div>
+                <img class="img-fluid" src="assets/img/bidan2.png" alt="Img" height="75" width="75"/>
+            </div>
+        </section>
+
+        <!-- Peta-->
+        <section class="projects-section bg-dark text-white" id="peta">
+            <div class="container px-4 px-lg-5 bg-dark text-white">
+                <!-- peta rumah bersalin-->
+                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                    <div class="col-xl-8 col-lg-7">
+                        <iframe src="puskesmas/puskesmas.html" frameborder="0" width="690" height="300"></iframe>
+                    </div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>PETA JUMLAH RUMAH BERSALIN</h4>
+                            <p class="" style="text-align:left">di samping merupakan Peta persebaran jumlah puskesmas,  posyandu dan polindes di jawa tengah.
+                                </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- peta bidan-->
+                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                    <div class="col-xl-8 col-lg-7">
+                        <iframe src="bidan/bidan.html" frameborder="0" width="690" height="300"></iframe>
+                    </div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>PETA JUMLAH BIDAN & PENDUDUK</h4>
+                            <p class="" style="text-align:left">di samping merupakan Peta persebaran jumlah Bidan dan jumlah penduduk yang ada di jawa tengah.
+                                </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- peta persebaran bayi-->
+                                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                                    <div class="col-xl-8 col-lg-7">
+                                        <iframe src="bayi/bayi.html" frameborder="0" width="690" height="300"></iframe>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-5">
+                                        <div class="featured-text text-center text-lg-left">
+                                            <h4>PETA JUMLAH BAYI</h4>
+                                            <p class="" style="text-align:left">di samping merupakan Peta persebaran jumlah Kelahiran bayi di jawa tengah.
+                                                </p>
+                                        </div>
+                                    </div>
+                                </div>
+                
+        </section>
+          <!-- data-->
+          <section class="about-section text-center" id="data">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-white mb-4">DATA NON SPASIAL</h2>
+                        <p class="text-white-50">
+                            Data ini bersumber dari Badan Pusat Statistik Jawa Tengah pada tahun 2019
+                        </p>
+
+                        <!-- Tabel polindes -->
+                        <div class="text-white">
+                            Data Puskesmas, Posyandu, Polindes di Kabupaten/Kota Provinsi Jawa Tengah
+                        </div>
+                        <div>
+                            <table class="table bg-dark text-white" cellspacing="0" border="0">
+                                <colgroup span="5" width="111"></colgroup>
+                                <tbody><tr>
+                                    <td height="17" align="left" valign="bottom">KABUPATEN</td>
+                                    <td align="right" valign="bottom">PUSKESMAS</td>
+                                    <td align="right" valign="bottom">POSYANDU</td>
+                                    <td align="right" valign="bottom">POLINDES</td>
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">BANJARNEGARA</td>
+                                    <td align="right" valign="bottom" sdval="35" sdnum="1033;">35</td>
+                                    <td align="right" valign="bottom" sdval="1572" sdnum="1033;">1572</td>
+                                    <td align="right" valign="bottom" sdval="194" sdnum="1033;">194</td>
+                                   
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">BANYUMAS</td>
+                                    <td align="right" valign="bottom" sdval="39" sdnum="1033;">39</td>
+                                    <td align="right" valign="bottom" sdval="2046" sdnum="1033;">2046</td>
+                                    <td align="right" valign="bottom" sdval="328" sdnum="1033;">328</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">BATANG</td>
+                                    <td align="right" valign="bottom" sdval="21" sdnum="1033;">21</td>
+                                    <td align="right" valign="bottom" sdval="1223" sdnum="1033;">1223</td>
+                                    <td align="right" valign="bottom" sdval="200" sdnum="1033;">200</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">BLORA</td>
+                                    <td align="right" valign="bottom" sdval="26" sdnum="1033;">26</td>
+                                    <td align="right" valign="bottom" sdval="1297" sdnum="1033;">1297</td>
+                                    <td align="right" valign="bottom" sdval="203" sdnum="1033;">203</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">BREBES</td>
+                                    <td align="right" valign="bottom" sdval="38" sdnum="1033;">38</td>
+                                    <td align="right" valign="bottom" sdval="1771" sdnum="1033;">1771</td>
+                                    <td align="right" valign="bottom" sdval="236" sdnum="1033;">236</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">CILACAP</td>
+                                    <td align="right" valign="bottom" sdval="38" sdnum="1033;">38</td>
+                                    <td align="right" valign="bottom" sdval="2170" sdnum="1033;">2170</td>
+                                    <td align="right" valign="bottom" sdval="194" sdnum="1033;">194</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">DEMAK</td>
+                                    <td align="right" valign="bottom" sdval="27" sdnum="1033;">27</td>
+                                    <td align="right" valign="bottom" sdval="1313" sdnum="1033;">1313</td>
+                                    <td align="right" valign="bottom" sdval="214" sdnum="1033;">214</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">GROBOGAN</td>
+                                    <td align="right" valign="bottom" sdval="30" sdnum="1033;">30</td>
+                                    <td align="right" valign="bottom" sdval="1623" sdnum="1033;">1623</td>
+                                    <td align="right" valign="bottom" sdval="206" sdnum="1033;">206</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">JEPARA</td>
+                                    <td align="right" valign="bottom" sdval="21" sdnum="1033;">21</td>
+                                    <td align="right" valign="bottom" sdval="1128" sdnum="1033;">1128</td>
+                                    <td align="right" valign="bottom" sdval="175" sdnum="1033;">175</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">BOYOLALI</td>
+                                    <td align="right" valign="bottom" sdval="26" sdnum="1033;">26</td>
+                                    <td align="right" valign="bottom" sdval="1821" sdnum="1033;">1821</td>
+                                    <td align="right" valign="bottom" sdval="213" sdnum="1033;">213</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">KARANGANYAR</td>
+                                    <td align="right" valign="bottom" sdval="21" sdnum="1033;">21</td>
+                                    <td align="right" valign="bottom" sdval="1408" sdnum="1033;">1408</td>
+                                    <td align="right" valign="bottom" sdval="163" sdnum="1033;">163</td>
+                                   
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">KEBUMEN</td>
+                                    <td align="right" valign="bottom" sdval="35" sdnum="1033;">35</td>
+                                    <td align="right" valign="bottom" sdval="2092" sdnum="1033;">2092</td>
+                                    <td align="right" valign="bottom" sdval="307" sdnum="1033;">307</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">KENDAL</td>
+                                    <td align="right" valign="bottom" sdval="30" sdnum="1033;">30</td>
+                                    <td align="right" valign="bottom" sdval="1420" sdnum="1033;">1420</td>
+                                    <td align="right" valign="bottom" sdval="208" sdnum="1033;">208</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">KLATEN</td>
+                                    <td align="right" valign="bottom" sdval="34" sdnum="1033;">34</td>
+                                    <td align="right" valign="bottom" sdval="2271" sdnum="1033;">2271</td>
+                                    <td align="right" valign="bottom" sdval="323" sdnum="1033;">323</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">Kota MAGELANG</td>
+                                    <td align="right" valign="bottom" sdval="5" sdnum="1033;">5</td>
+                                    <td align="right" valign="bottom" sdval="197" sdnum="1033;">197</td>
+                                    <td align="right" valign="bottom" sdval="0" sdnum="1033;">0</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">Kota PEKALONGAN</td>
+                                    <td align="right" valign="bottom" sdval="14" sdnum="1033;">14</td>
+                                    <td align="right" valign="bottom" sdval="409" sdnum="1033;">409</td>
+                                    <td align="right" valign="bottom" sdval="0" sdnum="1033;">0</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">Kota SALATIGA</td>
+                                    <td align="right" valign="bottom" sdval="6" sdnum="1033;">6</td>
+                                    <td align="right" valign="bottom" sdval="278" sdnum="1033;">278</td>
+                                    <td align="right" valign="bottom" sdval="24" sdnum="1033;">24</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">Kota SEMARANG</td>
+                                    <td align="right" valign="bottom" sdval="37" sdnum="1033;">37</td>
+                                    <td align="right" valign="bottom" sdval="1598" sdnum="1033;">1598</td>
+                                    <td align="right" valign="bottom" sdval="169" sdnum="1033;">169</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">Kota SURAKARTA</td>
+                                    <td align="right" valign="bottom" sdval="17" sdnum="1033;">17</td>
+                                    <td align="right" valign="bottom" sdval="606" sdnum="1033;">606</td>
+                                    <td align="right" valign="bottom" sdval="42" sdnum="1033;">42</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">Kota TEGAL</td>
+                                    <td align="right" valign="bottom" sdval="8" sdnum="1033;">8</td>
+                                    <td align="right" valign="bottom" sdval="203" sdnum="1033;">203</td>
+                                    <td align="right" valign="bottom" sdval="25" sdnum="1033;">25</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">KUDUS</td>
+                                    <td align="right" valign="bottom" sdval="19" sdnum="1033;">19</td>
+                                    <td align="right" valign="bottom" sdval="825" sdnum="1033;">825</td>
+                                    <td align="right" valign="bottom" sdval="109" sdnum="1033;">109</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">MAGELANG</td>
+                                    <td align="right" valign="bottom" sdval="29" sdnum="1033;">29</td>
+                                    <td align="right" valign="bottom" sdval="2461" sdnum="1033;">2461</td>
+                                    <td align="right" valign="bottom" sdval="272" sdnum="1033;">272</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">PATI</td>
+                                    <td align="right" valign="bottom" sdval="29" sdnum="1033;">29</td>
+                                    <td align="right" valign="bottom" sdval="1608" sdnum="1033;">1608</td>
+                                    <td align="right" valign="bottom" sdval="245" sdnum="1033;">245</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">PEKALONGAN</td>
+                                    <td align="right" valign="bottom" sdval="27" sdnum="1033;">27</td>
+                                    <td align="right" valign="bottom" sdval="1400" sdnum="1033;">1400</td>
+                                    <td align="right" valign="bottom" sdval="208" sdnum="1033;">208</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">PEMALANG</td>
+                                    <td align="right" valign="bottom" sdval="25" sdnum="1033;">25</td>
+                                    <td align="right" valign="bottom" sdval="1192" sdnum="1033;">1192</td>
+                                    <td align="right" valign="bottom" sdval="135" sdnum="1033;">135</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">PURBALINGGA</td>
+                                    <td align="right" valign="bottom" sdval="22" sdnum="1033;">22</td>
+                                    <td align="right" valign="bottom" sdval="1215" sdnum="1033;">1215</td>
+                                    <td align="right" valign="bottom" sdval="135" sdnum="1033;">135</td>
+                                   
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">PURWOREJO</td>
+                                    <td align="right" valign="bottom" sdval="27" sdnum="1033;">27</td>
+                                    <td align="right" valign="bottom" sdval="1655" sdnum="1033;">1655</td>
+                                    <td align="right" valign="bottom" sdval="245" sdnum="1033;">245</td>
+                                   
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">REMBANG</td>
+                                    <td align="right" valign="bottom" sdval="17" sdnum="1033;">17</td>
+                                    <td align="right" valign="bottom" sdval="1233" sdnum="1033;">1233</td>
+                                    <td align="right" valign="bottom" sdval="175" sdnum="1033;">175</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">SEMARANG</td>
+                                    <td align="right" valign="bottom" sdval="26" sdnum="1033;">26</td>
+                                    <td align="right" valign="bottom" sdval="1669" sdnum="1033;">1669</td>
+                                    <td align="right" valign="bottom" sdval="169" sdnum="1033;">169</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">SRAGEN</td>
+                                    <td align="right" valign="bottom" sdval="25" sdnum="1033;">25</td>
+                                    <td align="right" valign="bottom" sdval="1594" sdnum="1033;">1594</td>
+                                    <td align="right" valign="bottom" sdval="163" sdnum="1033;">163</td>
+                                   
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">SUKOHARJO</td>
+                                    <td align="right" valign="bottom" sdval="12" sdnum="1033;">12</td>
+                                    <td align="right" valign="bottom" sdval="1187" sdnum="1033;">1187</td>
+                                    <td align="right" valign="bottom" sdval="166" sdnum="1033;">166</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">TEGAL</td>
+                                    <td align="right" valign="bottom" sdval="29" sdnum="1033;">29</td>
+                                    <td align="right" valign="bottom" sdval="1518" sdnum="1033;">1518</td>
+                                    <td align="right" valign="bottom" sdval="210" sdnum="1033;">210</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">TEMANGGUNG</td>
+                                    <td align="right" valign="bottom" sdval="26" sdnum="1033;">26</td>
+                                    <td align="right" valign="bottom" sdval="1511" sdnum="1033;">1511</td>
+                                    <td align="right" valign="bottom" sdval="215" sdnum="1033;">215</td>
+                                   
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">WONOGIRI</td>
+                                    <td align="right" valign="bottom" sdval="34" sdnum="1033;">34</td>
+                                    <td align="right" valign="bottom" sdval="2144" sdnum="1033;">2144</td>
+                                    <td align="right" valign="bottom" sdval="230" sdnum="1033;">230</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">WONOSOBO</td>
+                                    <td align="right" valign="bottom" sdval="24" sdnum="1033;">24</td>
+                                    <td align="right" valign="bottom" sdval="1239" sdnum="1033;">1239</td>
+                                    <td align="right" valign="bottom" sdval="260" sdnum="1033;">260</td>
+                                    
+                                </tr>
+                            </tbody></table>
+                        </div>
+
+                        <!-- Table Bidan & junlah penduduk -->
+                        <P></P>
+                        <div class="text-white">
+                            Data Bidan dan ddata Penduduk di Kabupaten/Kota Provinsi Jawa Tengah
+                        </div>
+                        <div>
+                            <table class="table bg-dark text-white"cellspacing="0" border="0">
+                                <colgroup span="3" width="111"></colgroup>
+                                <tbody><tr>
+                                    <td height="17" align="left" valign="bottom">KABUPATEN</td>
+                                    <td align="right" valign="bottom">BIDAN</td>
+                                    <td align="right" valign="bottom">PENDUDUK</td>
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">BANJARNEGARA</td>
+                                    <td align="right" valign="bottom" sdval="667" sdnum="1033;">667</td>
+                                    <td align="right" valign="bottom" sdval="923989" sdnum="1033;">923989</td>
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">BANYUMAS</td>
+                                    <td align="right" valign="bottom" sdval="1085" sdnum="1033;">1085</td>
+                                    <td align="right" valign="bottom" sdval="1693006" sdnum="1033;">1693006</td>
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">BATANG</td>
+                                    <td align="right" valign="bottom" sdval="533" sdnum="1033;">533</td>
+                                    <td align="right" valign="bottom" sdval="768583" sdnum="1033;">768583</td>
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">BLORA</td>
+                                    <td align="right" valign="bottom" sdval="735" sdnum="1033;">735</td>
+                                    <td align="right" valign="bottom" sdval="865013" sdnum="1033;">865013</td>
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">BREBES</td>
+                                    <td align="right" valign="bottom" sdval="1380" sdnum="1033;">1380</td>
+                                    <td align="right" valign="bottom" sdval="1809096" sdnum="1033;">1809096</td>
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">CILACAP</td>
+                                    <td align="right" valign="bottom" sdval="1037" sdnum="1033;">1037</td>
+                                    <td align="right" valign="bottom" sdval="1727098" sdnum="1033;">1727098</td>
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">DEMAK</td>
+                                    <td align="right" valign="bottom" sdval="658" sdnum="1033;">658</td>
+                                    <td align="right" valign="bottom" sdval="1162805" sdnum="1033;">1162805</td>
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">GROBOGAN</td>
+                                    <td align="right" valign="bottom" sdval="816" sdnum="1033;">816</td>
+                                    <td align="right" valign="bottom" sdval="1377788" sdnum="1033;">1377788</td>
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">JEPARA</td>
+                                    <td align="right" valign="bottom" sdval="588" sdnum="1033;">588</td>
+                                    <td align="right" valign="bottom" sdval="1257912" sdnum="1033;">1257912</td>
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">BOYOLALI</td>
+                                    <td align="right" valign="bottom" sdval="562" sdnum="1033;">562</td>
+                                    <td align="right" valign="bottom" sdval="984807" sdnum="1033;">984807</td>
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">KARANGANYAR</td>
+                                    <td align="right" valign="bottom" sdval="629" sdnum="1033;">629</td>
+                                    <td align="right" valign="bottom" sdval="886519" sdnum="1033;">886519</td>
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">KEBUMEN</td>
+                                    <td align="right" valign="bottom" sdval="1031" sdnum="1033;">1031</td>
+                                    <td align="right" valign="bottom" sdval="1197982" sdnum="1033;">1197982</td>
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">KENDAL</td>
+                                    <td align="right" valign="bottom" sdval="666" sdnum="1033;">666</td>
+                                    <td align="right" valign="bottom" sdval="971086" sdnum="1033;">971086</td>
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">KLATEN</td>
+                                    <td align="right" valign="bottom" sdval="653" sdnum="1033;">653</td>
+                                    <td align="right" valign="bottom" sdval="1174986" sdnum="1033;">1174986</td>
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">Kota MAGELANG</td>
+                                    <td align="right" valign="bottom" sdval="530" sdnum="1033;">530</td>
+                                    <td align="right" valign="bottom" sdval="122111" sdnum="1033;">122111</td>
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">Kota PEKALONGAN</td>
+                                    <td align="right" valign="bottom" sdval="340" sdnum="1033;">340</td>
+                                    <td align="right" valign="bottom" sdval="307097" sdnum="1033;">307097</td>
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">Kota SALATIGA</td>
+                                    <td align="right" valign="bottom" sdval="200" sdnum="1033;">200</td>
+                                    <td align="right" valign="bottom" sdval="194084" sdnum="1033;">194084</td>
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">Kota SEMARANG</td>
+                                    <td align="right" valign="bottom" sdval="592" sdnum="1033;">592</td>
+                                    <td align="right" valign="bottom" sdval="1814110" sdnum="1033;">1814110</td>
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">Kota SURAKARTA</td>
+                                    <td align="right" valign="bottom" sdval="558" sdnum="1033;">558</td>
+                                    <td align="right" valign="bottom" sdval="519587" sdnum="1033;">519587</td>
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">Kota TEGAL</td>
+                                    <td align="right" valign="bottom" sdval="303" sdnum="1033;">303</td>
+                                    <td align="right" valign="bottom" sdval="249905" sdnum="1033;">249905</td>
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">KUDUS</td>
+                                    <td align="right" valign="bottom" sdval="716" sdnum="1033;">716</td>
+                                    <td align="right" valign="bottom" sdval="871311" sdnum="1033;">871311</td>
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">MAGELANG</td>
+                                    <td align="right" valign="bottom" sdval="162" sdnum="1033;">162</td>
+                                    <td align="right" valign="bottom" sdval="1290591" sdnum="1033;">1290591</td>
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">PATI</td>
+                                    <td align="right" valign="bottom" sdval="933" sdnum="1033;">933</td>
+                                    <td align="right" valign="bottom" sdval="1259590" sdnum="1033;">1259590</td>
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">PEKALONGAN</td>
+                                    <td align="right" valign="bottom" sdval="474" sdnum="1033;">474</td>
+                                    <td align="right" valign="bottom" sdval="897711" sdnum="1033;">897711</td>
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">PEMALANG</td>
+                                    <td align="right" valign="bottom" sdval="944" sdnum="1033;">944</td>
+                                    <td align="right" valign="bottom" sdval="1302813" sdnum="1033;">1302813</td>
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">PURBALINGGA</td>
+                                    <td align="right" valign="bottom" sdval="557" sdnum="1033;">557</td>
+                                    <td align="right" valign="bottom" sdval="933989" sdnum="1033;">933989</td>
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">PURWOREJO</td>
+                                    <td align="right" valign="bottom" sdval="630" sdnum="1033;">630</td>
+                                    <td align="right" valign="bottom" sdval="718316" sdnum="1033;">718316</td>
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">REMBANG</td>
+                                    <td align="right" valign="bottom" sdval="502" sdnum="1033;">502</td>
+                                    <td align="right" valign="bottom" sdval="638188" sdnum="1033;">638188</td>
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">SEMARANG</td>
+                                    <td align="right" valign="bottom" sdval="591" sdnum="1033;">591</td>
+                                    <td align="right" valign="bottom" sdval="1053786" sdnum="1033;">1053786</td>
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">SRAGEN</td>
+                                    <td align="right" valign="bottom" sdval="884" sdnum="1033;">884</td>
+                                    <td align="right" valign="bottom" sdval="890518" sdnum="1033;">890518</td>
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">SUKOHARJO</td>
+                                    <td align="right" valign="bottom" sdval="658" sdnum="1033;">658</td>
+                                    <td align="right" valign="bottom" sdval="891912" sdnum="1033;">891912</td>
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">TEGAL</td>
+                                    <td align="right" valign="bottom" sdval="1141" sdnum="1033;">1141</td>
+                                    <td align="right" valign="bottom" sdval="1440698" sdnum="1033;">1440698</td>
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">TEMANGGUNG</td>
+                                    <td align="right" valign="bottom" sdval="512" sdnum="1033;">512</td>
+                                    <td align="right" valign="bottom" sdval="772018" sdnum="1033;">772018</td>
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">WONOGIRI</td>
+                                    <td align="right" valign="bottom" sdval="506" sdnum="1033;">506</td>
+                                    <td align="right" valign="bottom" sdval="959492" sdnum="1033;">959492</td>
+                                </tr>
+                                <tr>
+                                    <td height="17" align="left" valign="bottom">WONOSOBO</td>
+                                    <td align="right" valign="bottom" sdval="433" sdnum="1033;">433</td>
+                                    <td align="right" valign="bottom" sdval="790504" sdnum="1033;">790504</td>
+                                </tr>
+                            </tbody></table>
+                        </div>
+
+                        <!-- Table Bayi Kelahiran -->
+                        <P></P>
+                        <div class="text-white">
+                            Data Bayi Lahir di Kabupaten/Kota Provinsi Jawa Tengah
+                        </div>
+                        <table class="table bg-dark text-white text-center" cellspacing="0" border="0">
+                            <colgroup span="2" width="111"></colgroup>
+                            <tbody><tr>
+                                <td height="17" align="left" valign="bottom">KABUPATEN</td>
+                                <td align="center" valign="bottom">Bayi Lahir</td>
+                            </tr>
+                            <tr>
+                                <td height="17" align="left" valign="bottom">BANJARNEGARA</td>
+                                <td align="center" valign="bottom" sdval="15733" sdnum="1033;">15733</td>
+                            </tr>
+                            <tr>
+                                <td height="17" align="left" valign="bottom">BANYUMAS</td>
+                                <td align="center" valign="bottom" sdval="26515" sdnum="1033;">26515</td>
+                            </tr>
+                            <tr>
+                                <td height="17" align="left" valign="bottom">BATANG</td>
+                                <td align="center" valign="bottom" sdval="12603" sdnum="1033;">12603</td>
+                            </tr>
+                            <tr>
+                                <td height="17" align="left" valign="bottom">BLORA</td>
+                                <td align="center" valign="bottom" sdval="11632" sdnum="1033;">11632</td>
+                            </tr>
+                            <tr>
+                                <td height="17" align="left" valign="bottom">BREBES</td>
+                                <td align="center" valign="bottom" sdval="31700" sdnum="1033;">31700</td>
+                            </tr>
+                            <tr>
+                                <td height="17" align="left" valign="bottom">CILACAP</td>
+                                <td align="center" valign="bottom" sdval="28875" sdnum="1033;">28875</td>
+                            </tr>
+                            <tr>
+                                <td height="17" align="left" valign="bottom">DEMAK</td>
+                                <td align="center" valign="bottom" sdval="20778" sdnum="1033;">20778</td>
+                            </tr>
+                            <tr>
+                                <td height="17" align="left" valign="bottom">GROBOGAN</td>
+                                <td align="center" valign="bottom" sdval="21559" sdnum="1033;">21559</td>
+                            </tr>
+                            <tr>
+                                <td height="17" align="left" valign="bottom">JEPARA</td>
+                                <td align="center" valign="bottom" sdval="20297" sdnum="1033;">20297</td>
+                            </tr>
+                            <tr>
+                                <td height="17" align="left" valign="bottom">BOYOLALI</td>
+                                <td align="center" valign="bottom" sdval="13708" sdnum="1033;">13708</td>
+                            </tr>
+                            <tr>
+                                <td height="17" align="left" valign="bottom">KARANGANYAR</td>
+                                <td align="center" valign="bottom" sdval="12198" sdnum="1033;">12198</td>
+                            </tr>
+                            <tr>
+                                <td height="17" align="left" valign="bottom">KEBUMEN</td>
+                                <td align="center" valign="bottom" sdval="19626" sdnum="1033;">19626</td>
+                            </tr>
+                            <tr>
+                                <td height="17" align="left" valign="bottom">KENDAL</td>
+                                <td align="center" valign="bottom" sdval="15393" sdnum="1033;">15393</td>
+                            </tr>
+                            <tr>
+                                <td height="17" align="left" valign="bottom">KLATEN</td>
+                                <td align="center" valign="bottom" sdval="15681" sdnum="1033;">15681</td>
+                            </tr>
+                            <tr>
+                                <td height="17" align="left" valign="bottom">Kota MAGELANG</td>
+                                <td align="center" valign="bottom" sdval="1532" sdnum="1033;">1532</td>
+                            </tr>
+                            <tr>
+                                <td height="17" align="left" valign="bottom">Kota PEKALONGAN</td>
+                                <td align="center" valign="bottom" sdval="5923" sdnum="1033;">5923</td>
+                            </tr>
+                            <tr>
+                                <td height="17" align="left" valign="bottom">Kota SALATIGA</td>
+                                <td align="center" valign="bottom" sdval="2542" sdnum="1033;">2542</td>
+                            </tr>
+                            <tr>
+                                <td height="17" align="left" valign="bottom">Kota SEMARANG</td>
+                                <td align="center" valign="bottom" sdval="23746" sdnum="1033;">23746</td>
+                            </tr>
+                            <tr>
+                                <td height="17" align="left" valign="bottom">Kota SURAKARTA</td>
+                                <td align="center" valign="bottom" sdval="9603" sdnum="1033;">9603</td>
+                            </tr>
+                            <tr>
+                                <td height="17" align="left" valign="bottom">Kota TEGAL</td>
+                                <td align="center" valign="bottom" sdval="4214" sdnum="1033;">4214</td>
+                            </tr>
+                            <tr>
+                                <td height="17" align="left" valign="bottom">KUDUS</td>
+                                <td align="center" valign="bottom" sdval="15088" sdnum="1033;">15088</td>
+                            </tr>
+                            <tr>
+                                <td height="17" align="left" valign="bottom">MAGELANG</td>
+                                <td align="center" valign="bottom" sdval="1532" sdnum="1033;">1532</td>
+                            </tr>
+                            <tr>
+                                <td height="17" align="left" valign="bottom">PATI</td>
+                                <td align="center" valign="bottom" sdval="17745" sdnum="1033;">17745</td>
+                            </tr>
+                            <tr>
+                                <td height="17" align="left" valign="bottom">PEKALONGAN</td>
+                                <td align="center" valign="bottom" sdval="16543" sdnum="1033;">16543</td>
+                            </tr>
+                            <tr>
+                                <td height="17" align="left" valign="bottom">PEMALANG</td>
+                                <td align="center" valign="bottom" sdval="25797" sdnum="1033;">25797</td>
+                            </tr>
+                            <tr>
+                                <td height="17" align="left" valign="bottom">PURBALINGGA</td>
+                                <td align="center" valign="bottom" sdval="14776" sdnum="1033;">14776</td>
+                            </tr>
+                            <tr>
+                                <td height="17" align="left" valign="bottom">PURWOREJO</td>
+                                <td align="center" valign="bottom" sdval="8895" sdnum="1033;">8895</td>
+                            </tr>
+                            <tr>
+                                <td height="17" align="left" valign="bottom">REMBANG</td>
+                                <td align="center" valign="bottom" sdval="9246" sdnum="1033;">9246</td>
+                            </tr>
+                            <tr>
+                                <td height="17" align="left" valign="bottom">SEMARANG</td>
+                                <td align="center" valign="bottom" sdval="14142" sdnum="1033;">14142</td>
+                            </tr>
+                            <tr>
+                                <td height="17" align="left" valign="bottom">SRAGEN</td>
+                                <td align="center" valign="bottom" sdval="14056" sdnum="1033;">14056</td>
+                            </tr>
+                            <tr>
+                                <td height="17" align="left" valign="bottom">SUKOHARJO</td>
+                                <td align="center" valign="bottom" sdval="12548" sdnum="1033;">12548</td>
+                            </tr>
+                            <tr>
+                                <td height="17" align="left" valign="bottom">TEGAL</td>
+                                <td align="center" valign="bottom" sdval="26945" sdnum="1033;">26945</td>
+                            </tr>
+                            <tr>
+                                <td height="17" align="left" valign="bottom">TEMANGGUNG</td>
+                                <td align="center" valign="bottom" sdval="10555" sdnum="1033;">10555</td>
+                            </tr>
+                            <tr>
+                                <td height="17" align="left" valign="bottom">WONOGIRI</td>
+                                <td align="center" valign="bottom" sdval="10830" sdnum="1033;">10830</td>
+                            </tr>
+                            <tr>
+                                <td height="17" align="left" valign="bottom">WONOSOBO</td>
+                                <td align="center" valign="bottom" sdval="12615" sdnum="1033;">12615</td>
+                            </tr>
+                        </tbody></table>
+                    </div>
+                </div>
+            </div>
+        </section>
+          <!-- grafik-->
+          <section class="about-section text-center" id="grafik">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-white mb-4">GRAFIK DATA</h2>
+                        <p class="text-white-50">
+                           GRAFIK PENINGKATAN KELAHIRAN BAYI
+                        </p>
+                        <div style="width: 500px;height: 500px">
+                            <canvas id="myChart"></canvas>
+                        </div>
+                     
+                     
+                        <script>
+                            var ctx = document.getElementById("myChart").getContext('2d');
+                            var myChart = new Chart(ctx, {
+                                type: 'line',
+                                data: {
+                                    labels: ["2017", "2018", "2019", "2020",],
+                                    datasets: [{
+                                        label: '# of Votes',
+                                        data: [539493, 535630,540786, 537513,],
+                                        backgroundColor: [
+                                        'rgba(255, 99, 132, 0.2)',
+                                        'rgba(54, 162, 235, 0.2)',
+                                        'rgba(255, 206, 86, 0.2)',
+                                        'rgba(75, 192, 192, 0.2)',
+                                        'rgba(153, 102, 255, 0.2)',
+                                        'rgba(255, 159, 64, 0.2)'
+                                        ],
+                                        borderColor: [
+                                        'rgba(255,99,132,1)',
+                                        'rgba(54, 162, 235, 1)',
+                                        'rgba(255, 206, 86, 1)',
+                                        'rgba(75, 192, 192, 1)',
+                                        'rgba(153, 102, 255, 1)',
+                                        'rgba(255, 159, 64, 1)'
+                                        ],
+                                        borderWidth: 1
+                                    }]
+                                },
+                                options: {
+                                    scales: {
+                                        yAxes: [{
+                                            ticks: {
+                                                beginAtZero:true
+                                            }
+                                        }]
+                                    }
+                                }
+                            });
+                        </script>          
+        </section>
+
+        <!-- kontak-->
+        <section class="signup-section bg-black" id="kontak">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-10 col-lg-8 mx-auto text-center">
+                        
+                        <h2 class="text-white mb-5">JAMADI RUDIANTO</h2>
+                        <img class="img-fluid" src="assets/img/saya.JPG" alt="Img" height="250" width="250" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Tentang-->
+        <section class="contact-section bg-black">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Address</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">jl. Agung no.14 Kota Semarang</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-envelope text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Email</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50"><a href="#!">jamadirudianto@gmail.com</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Phone</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">083843514788</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <P></P>
+                    <form class="form-signup d-flex flex-column flex-sm-row">
+                        <input class="form-control flex-fill me-0 me-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Enter email address..." />
+                        <button class="btn btn-primary" type="submit">KIRIM</button>
+                    </form>
+                    <div class="social d-flex justify-content-center">
+                        <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Jamadi Rudianto</div></footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
